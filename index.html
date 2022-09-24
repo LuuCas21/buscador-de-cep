@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas R. de Souza">
+    <meta name="keyword" content="Buscador de CEP, Encontre CEP de todo o Brasil">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Buscador de CEP</title>
+</head>
+<body>
+    <main>
+        <h1>BUSCAR CEP</h1>
+        <div id="informationInput">
+            <label>CEP</label>
+            <div id="input_cep" class="input">
+                <input type="text" id="cep" required />
+                <button type="submit" id="button" class="fa fa-search"></button>
+            </div>
+
+            <label class="hide" data-toggle="yes">Endereço</label>
+            <div id="input_address" class="input hide" data-toggle="yes">
+                <input type="text" id="address" />
+                <button type="submit" id="button" class="fa fa-copy copy_button" title="Copiar"></button>
+            </div>
+
+            <label class="hide" data-toggle="yes">Cidade</label>
+            <div id="input_address" class="input hide" data-toggle="yes">
+                <input type="text" id="city" />
+                <button type="submit" id="button" class="fa fa-copy copy_button_locale" title="Copiar"></button>
+            </div>
+
+            <label class="hide" data-toggle="yes">Bairro</label>
+            <div id="input_address" class="input hide" data-toggle="yes">
+                <input type="text" id="bairro" />
+                <button type="submit" id="button" class="fa fa-copy copy_button_bairro" title="Copiar"></button>
+            </div>
+
+            <label class="hide" data-toggle="yes">Estado</label>
+            <div id="input_address" class="input hide" data-toggle="yes">
+                <input type="text" id="state" />
+                <button type="submit" id="button" class="fa fa-copy copy_button_state" title="Copiar"></button>
+            </div>
+
+            <!--<button type="submit" id="button" class="fa fa-search"></button>-->
+        </div>
+    </main>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
